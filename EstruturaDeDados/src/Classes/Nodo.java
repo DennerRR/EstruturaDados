@@ -13,35 +13,35 @@ import Estudante.Estudante;
  */
 public class Nodo {
 
-    private long key;
-    private Estudante value;
-    private Nodo next;
-    private Nodo previous;
+    private long chave;
+    private Estudante valor;
+    private Nodo prox;
+    private Nodo ant;
 
-    public Nodo(long key, Estudante value) {
-        this.key = key;
-        this.value = value;
+    public Nodo(long chave, Estudante valor) {
+        this.chave = chave;
+        this.valor = valor;
     }
 
-    public void setNext(Nodo next) {
-        this.next = next;
+    public void setProx(Nodo prox) {
+        this.prox = prox;
     }
 
-    public void setPrevious(Nodo previous) {
-        this.previous = previous;
+    public void setAnt(Nodo ant) {
+        this.ant = ant;
     }
 
-    public void setInfo(long key, Estudante value) {
-        this.key = key;
-        this.value = value;
+    public void setInfo(long chave, Estudante valor) {
+        this.chave = chave;
+        this.valor = valor;
     }
 
-    public Nodo getNext() {
-        return next;
+    public Nodo getProx() {
+        return prox;
     }
 
-    public Nodo getPrevious() {
-        return previous;
+    public Nodo getAnt() {
+        return ant;
     }
 
 }

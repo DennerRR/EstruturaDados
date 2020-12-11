@@ -52,8 +52,8 @@ public class Mapa implements IMapa {
             fim = aux;
             fim = aux;
         } else {
-            fim.setNext(aux);
-            aux.setPrevious(fim);
+            fim.setProx(aux);
+            aux.setAnt(fim);
             this.fim = aux;
         }
         return value;
