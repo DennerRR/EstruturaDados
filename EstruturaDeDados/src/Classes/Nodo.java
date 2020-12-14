@@ -21,6 +21,8 @@ public class Nodo {
     public Nodo(long chave, Estudante valor) {
         this.chave = chave;
         this.valor = valor;
+        this.prox = null;
+        this.ant = null;
     }
 
     public void setProx(Nodo prox) {
@@ -44,6 +46,8 @@ public class Nodo {
         return ant;
     }
 
+    public String toString() {
+        return null;
+    }
+
 }
-
-

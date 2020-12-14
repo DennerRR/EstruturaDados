@@ -6,6 +6,12 @@
             <file>file:/C:/Users/LG/OneDrive/Documentos/NetBeansProjects/EstruturaDeDados/src/Classes/Vetor.java</file>
             <file>file:/C:/Users/LG/OneDrive/Documentos/NetBeansProjects/EstruturaDeDados/src/Estudante/Estudante.java</file>
         </group>
-        <group name="Grupo-09- RP3"/>
+        <group name="Grupo-09- RP3">
+            <file>file:/C:/Users/LG/OneDrive/Documentos/NetBeansProjects/EstruturaDeDados/src/Estudante/Estudante.java</file>
+            <file>file:/C:/Users/LG/OneDrive/Documentos/NetBeansProjects/EstruturaDeDados/src/Classes/Nodo.java</file>
+            <file>file:/C:/Users/LG/OneDrive/Documentos/NetBeansProjects/EstruturaDeDados/src/Classes/Lista.java</file>
+            <file>file:/C:/Users/LG/OneDrive/Documentos/NetBeansProjects/EstruturaDeDados/src/Classes/NoArvore.java</file>
+            <file>file:/C:/Users/LG/OneDrive/Documentos/NetBeansProjects/EstruturaDeDados/src/Classes/Arvore.java</file>
+        </group>
     </open-files>
 </project-private>
