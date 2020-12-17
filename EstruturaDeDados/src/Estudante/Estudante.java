@@ -27,7 +27,7 @@ public class Estudante implements Comparable<Estudante>{
 	/**
 	 * Gera o número de matricula de forma aleatória
 	 */ 
-	private void geraMatricula(){
+	public void geraMatricula(){
 		if(nEstudantes%2==0)
 			this.matricula = 202050000 - geradorMatricula.nextInt(50000);
 		else

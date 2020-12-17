@@ -13,38 +13,54 @@ import Estudante.Estudante;
  */
 public class Nodo {
 
-    private long chave;
-    private Estudante valor;
+    private Object chave;
+    private Object info;
+    
     private Nodo prox;
     private Nodo ant;
 
-    public Nodo(long chave, Estudante valor) {
+    public Nodo(Object chave, Object info) {
         this.chave = chave;
-        this.valor = valor;
+        this.info = info;
         this.prox = null;
         this.ant = null;
     }
 
-    public void setProx(Nodo prox) {
-        this.prox = prox;
+  
+
+    public Object getChave() {
+        return chave;
     }
 
-    public void setAnt(Nodo ant) {
-        this.ant = ant;
-    }
-
-    public void setInfo(long chave, Estudante valor) {
+    public void setChave(Object chave) {
         this.chave = chave;
-        this.valor = valor;
+    }
+
+    public Object getInfo() {
+        return info;
+    }
+
+    public void setInfo(Object info) {
+        this.info = info;
     }
 
     public Nodo getProx() {
         return prox;
     }
 
+    public void setProx(Nodo prox) {
+        this.prox = prox;
+    }
+
     public Nodo getAnt() {
         return ant;
     }
+
+    public void setAnt(Nodo ant) {
+        this.ant = ant;
+    }
+
+   
 
     public String toString() {
         return null;
