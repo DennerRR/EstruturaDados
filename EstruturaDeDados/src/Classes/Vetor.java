@@ -1,94 +1,88 @@
 package Classes;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 import Estudante.Estudante;
 
-public class Vetor<Chave, Valor> implements Map<Chave, Valor> {
+public class Vetor {
 
-    private int numElementos = 100000;
-    private Estudante[] vetorEstudante = new Estudante[numElementos];
+    private Estudante e;
+    private int quantidade = 0;
+    private Map<Integer, Estudante> vetor = new HashMap<Integer, Estudante>();
 
-    @Override
-    public int size() {
-        // TODO Auto-generated method stub
+    public Vetor() {
+        quantidade = 0;
+        vetor = new HashMap<>();
+    }
+
+    public String adicionarEstudante(Estudante e) {
+        
+        for (int i = 0; i < 100000; i++) {
+            Estudante a = new Estudante();
+            int matricula = a.getMatricula();
+            vetor.put( matricula, a);   
+        }
+        return vetor.toString();
+    }
+/*
+    public Map<Integer, Estudante> ordenar(Estudante e) {
+        for (int i = 0; i < vetor.size(); i++) {
+            for (int j = 0; j < vetor.size()- 1; j++) {
+                Map a;
+                if (vetor[i] < vetor[j]) {
+                    a = vetor[i];
+                    vetor[i] = vetor[j];
+                    vetor[j] = a;
+                }
+            }
+            
+        }
+        return vetor;
+    }
+*/
+
+    public int contadorEs(Estudante e) {
+
+        int cont = 0;
+        for (int i = 0; i < vetor.size(); i++) {
+            if (e.isCursoES()) {
+                cont++;
+            }
+            return cont;
+        }
+        return -1;
+    }
+
+/*
+    public boolean removerEstudante() {
+
+        int id = indiceMatricula();
+        if (e.getMatricula() <= 202050000) {
+
+            if (id > 0) {
+
+                for (int k = id; k < (quantidade - 1); k++) {
+                    vetor[k] = vetor[k + 1];
+                }
+
+                quantidade--;
+                return true;
+            }
+
+        }
+        return false;
+    }
+
+    public int indiceMatricula() {
+        for (int k = 0; k < quantidade; k++) {
+            if (vetor[k].get(e.getMatricula()).equals(e.getMatricula())) {
+                return e.getMatricula();
+            }
+        }
         return 0;
     }
-
-    @Override
-    public boolean isEmpty() {
-        // TODO Auto-generated method stub
-        if (this.vetorEstudante == null){
-            return true;
-        }
-        return false;
-    }
-
-    @Override
-    public boolean containsKey(Object key) {
-        // TODO Auto-generated method stub
-        return false;
-    }
-
-    @Override
-    public boolean containsValue(Object value) {
-        // TODO Auto-generated method stub
-        return false;
-    }
-
-    @Override
-    public Valor get(Object key) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public Valor put(Chave key, Valor value) {
-        // TODO Auto-generated method stub
-        for (int i = 0; i < vetorEstudante.length; i++) {
-            Estudante e = new Estudante();
-            vetorEstudante[i] = e;
-            System.out.println(vetorEstudante[i].toString());
-        }
-        return null;
-    }
-
-    @Override
-    public Valor remove(Object key) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public void putAll(Map<? extends Chave, ? extends Valor> m) {
-        // TODO Auto-generated method stub
-
-    }
-
-    @Override
-    public void clear() {
-        // TODO Auto-generated method stub
-
-    }
-
-    @Override
-    public Set<Chave> keySet() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public Collection<Valor> values() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public Set<Entry<Chave, Valor>> entrySet() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-    
+*/
 }
